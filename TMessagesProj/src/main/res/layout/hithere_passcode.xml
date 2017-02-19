@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/hithere_passcode"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:id="@+id/txtPinCode"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault"
+        android:textStyle="normal|bold"
+        android:textSize="30sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center_horizontal" />
+
+    <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:columnCount="3"
+        android:orientation="horizontal"
+        android:id="@+id/grdKeypad">
+
+        <Button android:text="1\n   "
+            android:id="@+id/btn1"
+            android:backgroundTint="#d3d3d3" />
+
+        <Button android:text="2\nABC"
+            android:id="@+id/btn2"
+            android:backgroundTint="#d3d3d3" />
+
+        <Button android:text="3\nDEF"
+            android:id="@+id/btn3"
+            android:backgroundTint="#d3d3d3" />
+
+        <Button android:text="4\nGHI"
+            android:id="@+id/btn4"
+            android:backgroundTint="#d3d3d3" />
+
+        <Button android:text="5\nJKL"
+            android:id="@+id/btn5"
+            android:backgroundTint="#d3d3d3" />
+
+        <Button android:text="6\nMNO"
+            android:id="@+id/btn6"
+            android:backgroundTint="#d3d3d3" />
+
+        <Button android:text="7\nPQRS"
+            android:id="@+id/btn7"
+            android:backgroundTint="#d3d3d3" />
+
+        <Button android:text="8\nTUV"
+            android:id="@+id/btn8"
+            android:backgroundTint="#d3d3d3" />
+
+        <Button android:text="9\nWXYZ"
+            android:id="@+id/btn9"
+            android:backgroundTint="#d3d3d3" />
+
+        <Button android:text="CANCEL"
+            android:id="@+id/btnCancel"
+            android:backgroundTint="#ff0000" />
+
+        <Button android:text="0"
+            android:id="@+id/btn0"
+            android:backgroundTint="#d3d3d3" />
+
+        <Button android:text="CLEAR"
+            android:id="@+id/btnClear"
+            android:backgroundTint="#ffff00" />
+
+
+    </GridLayout>
+
+    <TextView
+        android:text=""
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtSpace"
+        android:layout_weight="0.13" />
+
+</LinearLayout>

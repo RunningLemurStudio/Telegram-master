@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/hithere_config"
+    android:scrollbarStyle="outsideOverlay">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="282dp"
+        android:orientation="vertical"
+        android:id="@+id/scrConfig"
+        android:showDividers="beginning|middle|end">
+
+    <Switch
+        android:text="@string/ProtectChat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/swtProtect"
+        android:checked="false"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp" />
+
+    <TextView
+        android:text="@string/EnterProtectionPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtInfo1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp" />
+
+    <ImageView
+        android:src="@drawable/eyeclosed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/imgEye"
+        android:contentDescription="Show/Hide password"
+        android:clickable="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:id="@+id/txtPassword1"
+        android:maxLength="4"
+        android:hint="@string/EnterPassword"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:inputType="numberPassword" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:id="@+id/txtPassword2"
+        android:maxLength="4"
+        android:hint="@string/RepeatPassword"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:inputType="numberPassword" />
+
+    <Switch
+        android:text="@string/EnableProtectedNotification"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/swtFakeNotification"
+        android:checked="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="@string/TitleExample"
+        android:ems="10"
+        android:id="@+id/txtTitle"
+        android:hint="@string/NotificationTitle"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="@string/MessageExample"
+        android:ems="10"
+        android:id="@+id/txtMessage"
+        android:hint="@string/NotificationMessage"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"/>
+    </LinearLayout>
+</ScrollView>
